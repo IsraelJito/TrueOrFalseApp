@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div>
+		<h1>True Or False</h1>
+		<!-- <p>We have over <span>20,910</span> people currently working on projects <span>Join Us</span></p> -->
+		<h3>Match</h3>
+	</div>
+	<div id="error">
+		  
+    </div>
+	<form method="post" action="">
+			<ul>
+				<li>
+					<label for="val1">Value 1</label>
+					<input type="text" name="val1" placeholder="Value.." id="valOne" oninput="runCheck()">
+				</li>
+				<li style="margin: auto; width: 30%;">
+					<label for="oper">Operator</label>
+					<select name="oper" id="oper" oninput="runCheck()">
+						<option value="!==">!==</option>
+						<option value="===">===</option>
+						<option value="!=">!=</option>
+						<option value="==" selected>==</option>
+						<option value=">=">>=</option>
+						<option value="<="><=</option>
+						<option value=">">></option>
+						<option value="<"><</option>
+
+					</select>
+				</li>
+				<li>
+					<label for="val2">Value 2</label>
+					<input type="text" name="valTwo" placeholder="Value.." id="valTwo" oninput="runCheck()">
+
+				</li>
+				<li>
+					<input type="submit" name="submit" value="Match" onclick="myForm()">
+				</li>
+			</ul>
+
+			
+		</form>
+
+    <footer>
+	 	© Copyright Mehn. All Rights Reserved<br>
+	 	Designed by <span>Jito</span>
+	 </footer>
+	<script src="javascript.js"></script>
+
+</body>
+</html>
+
+
